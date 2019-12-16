@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgba(255, 255, 255, 0.63);  
+    width: 95%;
+    margin:auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    /*border-bottom: 1px solid black;*/
+  }
+  
+  .navbar a {
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 12px 14px;
+    text-decoration: none;
+    font-size: 17px;
+  }
+  .align-right{
+    float: right;
+  }
+  .align-left{
+    float: left;
+  }
+  
+  .navbar a:hover {
+    /*background-color: rgb(86, 86, 207);*/
+    color: rgb(86, 86, 207);
+  }
+  .accedi a:hover{
+    background-color: rgb(86, 86, 207);
+    color: white;
+  }
+  
+  .navbar a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  .navbar .icon {
+    display: none;
+  }
+  #icon-responsive{
+    font-size:15px;
+  }
+  .accedi{
+      border: 2px solid rgb(86, 86, 207);
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar a:not(:first-child) {display: none;}
+    .navbar a.icon {
+      float: right;
+      display: block;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .navbar.responsive .icon {
+      position: relative;
+      left: 0;
+      bottom:0;
+      float: right;
+    }
+    .navbar.responsive a {
+      float: none;
+      display: block;
+      text-align: left;
+    }
+  
+  }
